@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Prime Check</title>
+
+</head>
+
+<body>
+
+ 
+
+<h2>Check Browser Console Output</h2>
+
+ 
+<!--Prime number-->
+<script>
+
+var num = 29;
+
+var isPrime = true;
+
+ 
+
+for (var i = 2; i < num; i++) {
+
+  if (num % i === 0) {
+
+    isPrime = false;
+
+    break;
+
+  }
+
+}
+
+ 
+
+if (isPrime) {
+
+  console.log(num + " is a prime number.");
+
+} else {
+
+  console.log(num + " is not a prime number.");
+
+}
+
+</script>
+
+<!--Find largest numbers-->
+<script>
+
+    var num1 = 15;
+    var num2 = 22;
+    var num3 = 8;
+
+    var largest = num1;
+    if(num2>largest)
+    {
+        largest = num2;
+    }
+    if(num3>largest)
+    {
+        largest = num3;
+    }
+    console.log("The largest number is: "+largest);
+</script>
+
+<!--Factorial Loop through Numbers-->
+<script>
+    var num=5;
+    var factorial =1 ;
+
+    for(var i=num; i>0;i--)
+{
+    factorial *= i;
+}
+console.log("factorial of "+num+" is: " +factorial);
+</script>
+
+<!--Reverse a String-->
+<script>
+    var str = "JavaScript";
+    var reversedStr = "";
+    for(var i = str.length -1 ; i>=0;i--)
+{
+    reversedStr += str[i];
+}
+console.log("Reversed string is: "+ reversedStr)
+</script>
+
+<!--Sum of array elements-->
+<script>
+    var arr=[1,2,3,4,5];
+    var sum =0;
+    for(var i=0; i<arr.length; i++)
+{
+    sum += arr[i];
+}
+console.log("Sum of array elements: "+ sum)
+
+</script>
+
+<!--Array Manupulation-->
+<script>
+
+var arr= [1,2,3,4,5];
+arr.push(6);
+arr.shift();
+console.log("Modified array: "+arr);
+</script>
+
+<!--Simple object example-->
+<script>
+    var person = {name:"Alice", age : 30};
+    console.log("Name "+person.name);
+    console.log("Age "+person.age);
+
+</script>
+
+</body>
+
+</html>
+
